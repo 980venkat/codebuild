@@ -1,0 +1,5 @@
+version: 0.1
+
+environment_variables:
+  plaintext:
+    CONFIG_FILE: env-details.yml
