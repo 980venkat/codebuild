@@ -1,5 +1,7 @@
-version: 0.1
+version: 0.2
 
-environment_variables:
-  plaintext:
-    CONFIG_FILE: env-details.yml
+env:
+  variables:
+    dbtag: v1.0.0
+    desc: this is for testing ramesh
+
