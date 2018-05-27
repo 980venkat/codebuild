@@ -1,7 +1,18 @@
-version: 0.2
+version: 0.1
 
 env:
   variables:
-    dbtag: v1.0.0
-    desc: this is for testing ramesh
+    CONFIG_FILE: config.yml
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Python code...
+      - python build.py
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - manifest.zip
 
